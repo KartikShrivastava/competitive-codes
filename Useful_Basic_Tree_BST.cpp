@@ -88,6 +88,10 @@ bool checkBST(Node* root, Node* &prev) {
 }
 
 int main() {
+	//Node is a "Tree Node" which contains an extra string literal to identify its proper location in tree
+	//i.e. second argument of Node is "(a,b)", where 'a' is index of root node and 'b' is index of current node
+	//'x' is used to identify root node which doesn't have a parent.
+	
 	//normal binary tree
 	Node* root = new Node(10, "(x,0)");
 	root->left = new Node(2, "(0,1)");
